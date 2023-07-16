@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleks Kross - Portfolio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS styles -->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="video-screen">
+        <div class="video-screen__body">
+            <h1 class="video-screen__title">Aleks Kross</h1>
+            <h2 class="video-screen__subtitle">Freelancer \ Web-developer \ Graphical designer</h2>
+        </div>
+        <video autoplay muted loop preload="auto" class="video-screen__video">
+            <source type="video/webm" src="./vid/video-2k.webm">
+            <source type="video/mp4" src="./vid/video-fullhd.mp4">
+        </video>
+        <svg class="video-screen__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#fff" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
+    </div>
+
+    <div class="main">
+
+        <div class="about">
+            <div class="container">
+                <div class="about__box">
+                    <div class="about__img-block">
+                        <div class="about__img-back"></div>
+                        <div class="about__img-main"></div>
+                    </div>
+                    <div class="about__text-block">
+                        <h2 class="about__text-title">About me</h2>
+                        <p id="one">I'm Aleks Kross, a 24-year-old web developer with real-world experience in a web studio in Tallinn. I graduated from Estonian Entrepreneurship University of Applied Sciences with a specialization in web development. I have expertise in web design, front-end development, and building websites, ranging from simple one-page sites to complex e-commerce platforms.</p>
+                        <p>I am proficient in Adobe tools and Figma, and I work with all modern CMS platforms. My coding skills include JavaScript, PHP, and I am currently expanding my knowledge in ReactJS. With a keen eye for aesthetics and functionality, I create visually appealing and user-friendly websites.</p> 
+                        <p>Outside of web development, I enjoy fitness, reading books, and photography. These hobbies fuel my creativity and inspire me to deliver outstanding results. I am constantly striving for self-improvement and new achievements.</p>
+                        <p>Feel free to explore my portfolio and discover how I can bring your web projects to life.</p>
+                        <a href="mailto: kross.aleks@outlook.com" class="about__text-btn">Send an email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="portfolio">
+
+                <h2 class="portfolio__title">Portfolio</h2>
+                <div class="portfolio__box">
+                    <div class="card" onclick="devShow();">
+                        <img class="card__img" src="./img/test.jpg" alt="test">
+                        <h3 class="card__title">Development</h3>
+                        <p class="card__subtitle">Various projects in JavaScript, PHP and other programming languages</p>
+                    </div>
+                    <div class="card" onclick="desShow();">
+                        <img class="card__img" src="./img/test-2.jpg" alt="test">
+                        <h3 class="card__title">Web design and digital graphics</h3>
+                        <p class="card__subtitle">Web designs, illustrations, and graphic elements</p>
+                    </div>
+                </div>
+
+                <div class="portfolio__dev" style="opacity: 0; height: 0; transition: top 1s, ease-out 1s;">
+                    <div class="container">
+                        <div class="portfolio__dev-box" style="display: none;">
+
+                            <div class="portfolio__dev-card card-add">
+                                <div class="card-add__img-box">
+                                    <div class="card-add__img img-1"></div>
+                                </div>
+                                <p class="card-add__text">Creating a JavaScript currency converter with exchange rate API<br><a href="https://github.com/rethfupy/Currency-Converter-JS" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                            </div>
+
+                            <div class="portfolio__dev-card card-add">
+                                <div class="card-add__img-box">
+                                    <div class="card-add__img img-2"></div>
+                                </div>
+                                <p class="card-add__text">C# program for solving linear and quadratic equations (Russian localization)<br><a href="https://github.com/rethfupy/Get-solution" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                            </div>
+
+                            <div class="portfolio__dev-card card-add">
+                                <div class="card-add__img-box">
+                                    <div class="card-add__img img-3"></div>
+                                </div>
+                                <p class="card-add__text">Mobile application for Android "Currency converter" with exchange rate API<br><a href="https://github.com/rethfupy/Currency-Converter-Android-APK" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                            </div>
+
+                            <div class="portfolio__dev-card card-add">
+                                <div class="card-add__img-box">
+                                    <div class="card-add__img img-4"></div>
+                                </div>
+                                <p class="card-add__text">Styled range input for changing the background color built with HTML, CSS and JavaScript<br><a href="https://github.com/rethfupy/Light-switcher" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                            </div>
+
+                            <div class="portfolio__dev-card card-add">
+                                <div class="card-add__img-box">
+                                    <div class="card-add__img img-5"></div>
+                                </div>
+                                <p class="card-add__text">A JavaScript MiniPaint application with possibility to download an image<br><a href="https://github.com/rethfupy/MiniPaint-JS" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                            </div>
+
+                            <div class="portfolio__dev-card card-add">
+                                <div class="card-add__img-box">
+                                    <div class="card-add__img img-6"></div>
+                                </div>
+                                <p class="card-add__text">A simple calculator built using HTML, CSS and JavaScript<br><a href="https://github.com/rethfupy/JS-Calculator" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                            </div>
+
+                            <div class="portfolio__dev-card card-add">
+                                <div class="card-add__img-box">
+                                    <div class="card-add__img img-7"></div>
+                                </div>
+                                <p class="card-add__text">Programming a Clock with dynamic background using Javascript<br><a href="https://github.com/rethfupy/Simple-JS-Clock" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                            </div>
+
+                            <div class="portfolio__dev-card card-add">
+                                <div class="card-add__img-box">
+                                    <div class="card-add__img img-8"></div>
+                                </div>
+                                <p class="card-add__text">Informational chatbot created in Microsoft Bot Composer for educational purposes<br><a href="https://github.com/rethfupy/infochatbot" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                            </div>
+
+                            <div class="portfolio__dev-card card-add">
+                                <div class="card-add__img-box">
+                                    <div class="card-add__img img-9"></div>
+                                </div>
+                                <p class="card-add__text">Create responsive website layout with the Bootstrap framework. Based on the PSD layout<br><a href="https://github.com/rethfupy/Minimo" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__design" id="portfolio" style="opacity: 0; height: 0; transition: top 1s, ease-out 1s;">
+                    <div class="container">
+                        <div class="portfolio__design-box" style="display: none;">
+                            <div class="portfolio__design-item">
+                                <a data-fancybox="item" title="Click to zoom-in" href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                                    <img src="./img/des/e_city.png" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                            </div>
+                            <div class="portfolio__design-item">
+                                <a data-fancybox="item" title="Click to zoom-in" href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                                    <img src="./img/des/banana.png" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                            </div>
+                            <div class="portfolio__design-item">
+                                <a data-fancybox="item" title="Click to zoom-in" href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                                    <img src="./img/des/chilli.png" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                            </div>
+                            <div class="portfolio__design-item">
+                                <a data-fancybox="item" title="Click to zoom-in" href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                                    <img src="./img/des/eggs.png" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                            </div>
+                            <div class="portfolio__design-item">
+                                <a data-fancybox="item" title="Click to zoom-in" href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                                    <img src="./img/des/postcard.png" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                            </div>
+                            <div class="portfolio__design-item">
+                                <a data-fancybox="item" title="Click to zoom-in" href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                                    <img src="./img/des/ppr.png" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                            </div>
+                            <div class="portfolio__design-item">
+                                <a data-fancybox="item" title="Click to zoom-in" href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                                    <img src="./img/des/saleslux.png" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                            </div>
+                            <div class="portfolio__design-item">
+                                <a data-fancybox="item" title="Click to zoom-in" href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" data-size="1200x600">
+                                    <img src="./img/des/tintingpro.png" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__involve">
+                    <div class="container">
+                        <p>I have also been involved in the creation, development and administration of websites such as:</p>
+                        <ul class="portfolio__involve-list">
+                            <li><a href="https://awlogistics.ee/" target="_blank">awlogistics.ee/</a></li>
+                            <li><a href="https://swcf.ee/" target="_blank">swcf.ee/</a></li>
+                            <li><a href="https://alfashop.ee/" target="_blank">alfashop.ee/</a></li>
+                            <li><a href="https://www.saleslux.cz/" target="_blank">saleslux.cz/</a></li>
+                            <li><a href="https://eiderdown.com/" target="_blank">eiderdown.com/</a></li>
+                            <li><a href="https://adretec.com/" target="_blank">adretec.com/</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__block">
+                    <p>Aleks Kross © 2023</p>
+                </div>
+                <div class="footer__block">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/bakersomi/"><img src="./img/icons/linked-icon.png" alt=""></a></li>
+                        <li><a href="https://github.com/rethfupy"><img src="./img/icons/github-icon.png" alt=""></a></li>
+                        <li><a href="mailto: kross.aleks@outlook.com"><img src="./img/icons/mail-icon.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js'></script>
+
+    <script>
+    var containerEl = document.querySelector(".portfolio__design-item");
+    var mixer = mixitup(containerEl, {
+        animation: {
+        effects: "fade translateZ(-100px)",
+        effectsIn: "fade translateY(-100%)",
+        easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+        }
+    });
+
+    $("[data-fancybox]").fancybox({
+        loop: true,
+        hash: true,
+        transitionEffect: "slide",
+        clickContent: function(current, event) {
+        return current.type === "image" ? "next" : false;
+        }
+    });
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
