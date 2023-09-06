@@ -373,6 +373,10 @@ body {
   background-image: url('../img/dev/witcher.webp');
 }
 
+.img-11 {
+  background-image: url('../img/dev/fairy.webp');
+}
+
 .card-add__text {
   width: 80%;
   margin-left: 4rem;
