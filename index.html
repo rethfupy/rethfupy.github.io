@@ -9,59 +9,75 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- CSS styles -->
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css'>
+    <!-- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-    <link rel="stylesheet" href="./css/gallery.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/gallery.css"> -->
+    <link rel="stylesheet" href="./css/main.css"> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <div class="video-screen">
-        <div class="video-screen__body">
-            <h1 class="video-screen__title">Aleks Kross</h1>
-            <h2 class="video-screen__subtitle">Freelancer \ Web-developer \ Graphical designer</h2>
-        </div>
-        <video autoplay muted loop preload="auto" class="video-screen__video">
-            <source type="video/webm" src="./vid/video-2k.webm">
-            <source type="video/mp4" src="./vid/video-fullhd.mp4">
-        </video>
-        <svg class="video-screen__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#fff" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
-    </div>
-
     <div class="main">
 
-        <div class="about">
+        <div class="video-screen"> <!-- video-screen -->
+            <div class="video-screen__body container-fluid">
+                <h1 class="video-screen__title">Aleks Kross</h1>
+                <h2 class="video-screen__subtitle">Freelancer \ Web-developer \ Graphical designer</h2>
+            </div>
+            <video autoplay muted loop preload="auto" class="video-screen__video">
+                <source type="video/webm" src="./vid/video-2k.webm">
+                <source type="video/mp4" src="./vid/video-fullhd.mp4">
+            </video>
+            <svg class="video-screen__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#fff" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
+        </div> <!-- video-screen -->
+        
+
+
+        <div class="about"> <!-- about -->
             <div class="container">
-                <div class="about__box">
-                    <div class="about__img-block">
+                <div class="about__box row">
+                    <div class="about__img-block col-sm-4 col-12">
                         <div class="about__img-back"></div>
                         <div class="about__img-main"></div>
                     </div>
-                    <div class="about__text-block">
+                    <div class="about__text-block col-sm-8 col-12">
                         <h2 class="about__text-title">About me</h2>
-                        <p id="one">I'm Aleks Kross, a 24-year-old web developer with real-world experience in a web studio in Tallinn. I graduated from Estonian Entrepreneurship University of Applied Sciences with a specialization in web development. I have expertise in web design, front-end development, and building websites, ranging from simple one-page sites to complex e-commerce platforms.</p>
+                        <p>I'm Aleks Kross, a 24-year-old web developer with real-world experience in a web studio in Tallinn. I graduated from Estonian Entrepreneurship University of Applied Sciences with a specialization in web development. I have expertise in web design, front-end development, and building websites, ranging from simple one-page sites to complex e-commerce platforms.</p>
                         <p>I am proficient in Adobe tools and Figma, and I work with all modern CMS platforms. My coding skills include JavaScript, PHP, and I am currently expanding my knowledge in ReactJS. With a keen eye for aesthetics and functionality, I create visually appealing and user-friendly websites.</p> 
                         <p>Outside of web development, I enjoy fitness, reading books, and photography. These hobbies fuel my creativity and inspire me to deliver outstanding results. I am constantly striving for self-improvement and new achievements.</p>
                         <p>Feel free to explore my portfolio and discover how I can bring your web projects to life.</p>
                         <a href="mailto: kross.aleks@outlook.com" class="about__text-btn">Send an email</a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>            
+        </div> <!-- about -->
 
 
         <div class="portfolio">
+            <div class="container">
+                <div class="portfolio__header row">
+                    <h2 class="portfolio__title offset-lg-2 col-lg-10 col-12">Portfolio</h2>
+                    <p class="offset-lg-2 col-lg-9 offset-lg-1 col-12">Here, you'll find a collection of my practical works, ranging from graphic design projects to programming endeavors in various languages. Explore the galleries to view my graphic design creations, and for a closer look at my programming ventures, check out my GitHub repositories.</p>
+                    <p class="offset-lg-2 col-lg-9 offset-lg-1 col-12">Each piece reflects my passion for creativity and innovation, showcasing a diverse skill set that extends across both the visual and technical realms. Feel free to explore and get a glimpse into my journey of blending design and code.</p>
+                </div>
 
-                <h2 class="portfolio__title">Portfolio</h2>
-                <div class="portfolio__box">
-                    <div class="card" onclick="devShow();">
-                        <img class="card__img" src="./img/test.jpg" alt="test">
-                        <h3 class="card__title">Development</h3>
-                        <p class="card__subtitle">Various projects in JavaScript, PHP and other programming languages</p>
+                <div class="portfolio__box offset-lg-2 col-lg-9">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./img/test.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Development</h5>
+                            <p class="card-text">Various projects in JavaScript, PHP and other programming languages.</p>
+                            <a href="javascript:devShow();" class="btn btn-primary">Show more</a>
+                        </div>
                     </div>
-                    <div class="card" onclick="desShow();">
-                        <img class="card__img" src="./img/test-2.jpg" alt="test">
-                        <h3 class="card__title">Web design and digital graphics</h3>
-                        <p class="card__subtitle">Web designs, illustrations, and graphic elements</p>
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./img/test-2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Web design and digital graphics</h5>
+                            <p class="card-text">Web designs, illustrations, and graphic elements.</p>
+                            <a href="javascript:desShow();" class="btn btn-primary">Show more</a>
+                        </div>
                     </div>
                 </div>
 
@@ -69,81 +85,103 @@
                     <div class="container">
                         <div class="portfolio__dev-box" style="display: none;">
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-10"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/witcher.webp" alt="">
                                 </div>
-                                <p class="card-add__text">An artistic web project dedicated to The Witcher. Parallax effect is used with the Swiper library<br><a href="https://github.com/rethfupy/horizontal-parallax" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>An artistic web project dedicated to The Witcher. Parallax effect is used with the Swiper library<br><a href="https://github.com/rethfupy/horizontal-parallax" target="_blank">GitHub link</a></p>
+                                </div>
                             </div>
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-1"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/c-c-js.webp" alt="">
                                 </div>
-                                <p class="card-add__text">Creating a JavaScript currency converter with exchange rate API<br><a href="https://github.com/rethfupy/Currency-Converter-JS" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>Creating a JavaScript currency converter with exchange rate API<br><a href="https://github.com/rethfupy/Currency-Converter-JS" target="_blank">GitHub link</a></p>
+                                </div>
                             </div>
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-2"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/g-s-c.webp" alt="">
                                 </div>
-                                <p class="card-add__text">C# program for solving linear and quadratic equations (Russian localization)<br><a href="https://github.com/rethfupy/Get-solution" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>C# program for solving linear and quadratic equations (Russian localization)<br><a href="https://github.com/rethfupy/Get-solution" target="_blank">GitHub link</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/c-c-droid.webp" alt="">
+                                </div>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>Mobile application for Android "Currency converter" with exchange rate API<br><a href="https://github.com/rethfupy/Currency-Converter-Android-APK" target="_blank">GitHub link</a></p>
+                                </div>
                             </div>
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-3"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/l-sw.webp" alt="">
                                 </div>
-                                <p class="card-add__text">Mobile application for Android "Currency converter" with exchange rate API<br><a href="https://github.com/rethfupy/Currency-Converter-Android-APK" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>Styled range input for changing the background color built with HTML, CSS and JavaScript<br><a href="https://github.com/rethfupy/Light-switcher" target="_blank">GitHub link</a></p>
+                                </div>
                             </div>
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-4"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/m-p-js.webp" alt="">
                                 </div>
-                                <p class="card-add__text">Styled range input for changing the background color built with HTML, CSS and JavaScript<br><a href="https://github.com/rethfupy/Light-switcher" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>A JavaScript MiniPaint application with possibility to download an image<br><a href="https://github.com/rethfupy/MiniPaint-JS" target="_blank">GitHub link</a></p>
+                                </div>
                             </div>
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-5"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/calc-js.webp" alt="">
                                 </div>
-                                <p class="card-add__text">A JavaScript MiniPaint application with possibility to download an image<br><a href="https://github.com/rethfupy/MiniPaint-JS" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>A simple calculator built using HTML, CSS and JavaScript<br><a href="https://github.com/rethfupy/JS-Calculator" target="_blank">GitHub link</a></p>
+                                </div>
                             </div>
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-6"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/s-cl-js.webp" alt="">
                                 </div>
-                                <p class="card-add__text">A simple calculator built using HTML, CSS and JavaScript<br><a href="https://github.com/rethfupy/JS-Calculator" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>Programming a Clock with dynamic background using Javascript<br><a href="https://github.com/rethfupy/Simple-JS-Clock" target="_blank">GitHub link</a></p>
+                                </div>
                             </div>
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-7"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/mc-bot.webp" alt="">
                                 </div>
-                                <p class="card-add__text">Programming a Clock with dynamic background using Javascript<br><a href="https://github.com/rethfupy/Simple-JS-Clock" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>Informational chatbot created in Microsoft Bot Composer for educational purposes<br><a href="https://github.com/rethfupy/infochatbot" target="_blank">GitHub link</a></p>
+                                </div>
                             </div>
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-8"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/minimo.webp" alt="">
                                 </div>
-                                <p class="card-add__text">Informational chatbot created in Microsoft Bot Composer for educational purposes<br><a href="https://github.com/rethfupy/infochatbot" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>Create responsive website layout with the Bootstrap framework. Based on the PSD layout<br><a href="https://github.com/rethfupy/Minimo" target="_blank">GitHub link</a></p>
+                                </div>
                             </div>
 
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-9"></div>
+                            <div class="card-dev row">
+                                <div class="card-dev__img col-6 col-sm-4">
+                                    <img src="img/dev/fairy.webp" alt="">
                                 </div>
-                                <p class="card-add__text">Create responsive website layout with the Bootstrap framework. Based on the PSD layout<br><a href="https://github.com/rethfupy/Minimo" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
-                            </div>
-
-                            <div class="portfolio__dev-card card-add">
-                                <div class="card-add__img-box">
-                                    <div class="card-add__img img-11"></div>
+                                <div class="card-dev__text col-6 col-sm-8">
+                                    <p>An artistic web project dedicated to the Forest. Parallax effect is used with the pure CSS<br><a href="https://github.com/rethfupy/Fairy-Forest" target="_blank">GitHub link</a></p>
                                 </div>
-                                <p class="card-add__text">An artistic web project dedicated to the Forest. Parallax effect is used with the pure CSS<br><a href="https://github.com/rethfupy/Fairy-Forest" target="_blank" style="display: inline-block; padding-top: 1rem;">GitHub link</a></p>
                             </div>
 
                         </div>
@@ -152,84 +190,98 @@
 
                 <div class="portfolio__design" id="portfolio" style="opacity: 0; height: 0; transition: top 1s, ease-out 1s;">
                     <div class="container">
-                        <div class="portfolio__design-box" style="display: none;">
-                            <div class="portfolio__design-item">
+                        <div class="portfolio__design-box row" style="display: none;">
+
+                            <div class="portfolio__design-item col-12 col-sm-6 col-md-4">
                                 <a data-fancybox="item" title="Click to zoom-in" href="https://rethfupy.github.io/img/des/e_city.png" data-size="1200x600">
                                     <img src="./img/des/e_city.png" itemprop="thumbnail" alt="Eastern city" />
                                 </a>
                             </div>
-                            <div class="portfolio__design-item">
+
+                            <div class="portfolio__design-item col-12 col-sm-6 col-md-4">
                                 <a data-fancybox="item" title="Click to zoom-in" href="https://rethfupy.github.io/img/des/banana.png" data-size="1200x600">
                                     <img src="./img/des/banana.png" itemprop="thumbnail" alt="Banana" />
                                 </a>
                             </div>
-                            <div class="portfolio__design-item">
+
+                            <div class="portfolio__design-item col-12 col-sm-6 col-md-4">
                                 <a data-fancybox="item" title="Click to zoom-in" href="https://rethfupy.github.io/img/des/chilli.png" data-size="1200x600">
                                     <img src="./img/des/chilli.png" itemprop="thumbnail" alt="Chilli papper" />
                                 </a>
                             </div>
-                            <div class="portfolio__design-item">
+
+                            <div class="portfolio__design-item col-12 col-sm-6 col-md-4">
                                 <a data-fancybox="item" title="Click to zoom-in" href="https://rethfupy.github.io/img/des/eggs.png" data-size="1200x600">
                                     <img src="./img/des/eggs.png" itemprop="thumbnail" alt="Easter eggs" />
                                 </a>
                             </div>
-                            <div class="portfolio__design-item">
+
+                            <div class="portfolio__design-item col-12 col-sm-6 col-md-4">
                                 <a data-fancybox="item" title="Click to zoom-in" href="https://rethfupy.github.io/img/des/postcard.png" data-size="1200x600">
                                     <img src="./img/des/postcard.png" itemprop="thumbnail" alt="Hawaii postcard" />
                                 </a>
                             </div>
-                            <div class="portfolio__design-item">
+
+                            <div class="portfolio__design-item col-12 col-sm-6 col-md-4">
                                 <a data-fancybox="item" title="Click to zoom-in" href="https://rethfupy.github.io/img/des/ppr.png" data-size="1200x600">
                                     <img src="./img/des/ppr.png" itemprop="thumbnail" alt="Maple Leaf" />
                                 </a>
                             </div>
-                            <div class="portfolio__design-item">
+
+                            <div class="portfolio__design-item col-12 col-sm-6 col-md-4">
                                 <a data-fancybox="item" title="Click to zoom-in" href="https://rethfupy.github.io/img/des/saleslux.png" data-size="1200x600">
                                     <img src="./img/des/saleslux.png" itemprop="thumbnail" alt="Design of website Saleslux" />
                                 </a>
                             </div>
-                            <div class="portfolio__design-item">
+
+                            <div class="portfolio__design-item col-12 col-sm-6 col-md-4">
                                 <a data-fancybox="item" title="Click to zoom-in" href="https://rethfupy.github.io/img/des/tintingpro.png" data-size="1200x600">
                                     <img src="./img/des/tintingpro.png" itemprop="thumbnail" alt="Design of website TintingPro" />
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio__involve">
                     <div class="container">
-                        <p>I have also been involved in the creation, development and administration of websites such as:</p>
-                        <ul class="portfolio__involve-list">
-                            <li><a href="https://www.alfashop.ee/" target="_blank">alfashop.ee/</a></li>
-                            <li><a href="https://www.saleslux.cz/" target="_blank">saleslux.cz/</a></li>
-                            <li><a href="https://www.eiderdown.com/" target="_blank">eiderdown.com/</a></li>
-                            <li><a href="https://www.adretec.com/" target="_blank">adretec.com/</a></li>
-                            <li><a href="https://www.awlogistics.ee/" target="_blank">awlogistics.ee/</a></li>
-                            <li><a href="https://www.swcf.ee/" target="_blank">swcf.ee/</a></li>
-                        </ul>
+                        <p class="col-12 col-sm-6">I have also been involved in the creation, development and administration of websites such as:</p>
+                        <div class="involve__box">
+                            <div class="col-12"><a href="https://awlogistics.ee/" target="_blank">awlogistics.ee/</a></div>
+                            <div class="col-12"><a href="https://swcf.ee/" target="_blank">swcf.ee/</a></div>
+                            <div class="col-12"><a href="https://alfashop.ee/" target="_blank">alfashop.ee/</a></div>
+                            <div class="col-12"><a href="https://www.saleslux.cz/" target="_blank">saleslux.cz/</a></div>
+                            <div class="col-12"><a href="https://eiderdown.com/" target="_blank">eiderdown.com/</a></div>
+                            <div class="col-12"><a href="https://adretec.com/" target="_blank">adretec.com/</a></div>
+                        </div>
                     </div>
                 </div>
 
-        </div>
-    </div>
+            </div>
+        </div> <!-- portfolio -->
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__box">
-                <div class="footer__block">
-                    <p>Aleks Kross © 2023</p>
-                </div>
-                <div class="footer__block">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/bakersomi/"><img src="./img/icons/linked-icon.png" alt=""></a></li>
-                        <li><a href="https://github.com/rethfupy"><img src="./img/icons/github-icon.png" alt=""></a></li>
-                        <li><a href="mailto: kross.aleks@outlook.com"><img src="./img/icons/mail-icon.png" alt=""></a></li>
-                    </ul>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__box">
+                    <div class="footer__block">
+                        <p>Aleks Kross © 2023</p>
+                    </div>
+                    <div class="footer__block">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/bakersomi/"><img src="./img/icons/linked-icon.png" alt=""></a></li>
+                            <li><a href="https://github.com/rethfupy"><img src="./img/icons/github-icon.png" alt=""></a></li>
+                            <li><a href="mailto: kross.aleks@outlook.com"><img src="./img/icons/mail-icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+
+    </div> <!-- main  -->
+
+    
 
     <!-- JS Links -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
