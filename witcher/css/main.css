@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --transition: 1.75s cubic-bezier(.2, .6, 0, 1); 
+}
+
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+.slider {
+    height: 100%;
+}
+
+.slider__layer {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    will-change: transform;
+    transition: var(--transition)!important;
+}
+
+.slider__layer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, 0.35);
+}
+
+.slider__item {
+    overflow: hidden;
+}
+
+.slider__wrapper {
+    will-change: transform;
+    transform-style: preserve-3d;
+    transition: var(--transition)!important;
+}

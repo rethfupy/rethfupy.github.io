@@ -216,19 +216,30 @@ body {
     padding: 15px 15px;
 }
 
-.portfolio__involve p {
+.websites h4 {
   text-align: center;
-  margin: 1rem auto;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
 }
 
-.involve__box {
+.websites p {
   text-align: center;
-  padding-bottom: 1rem;
 }
 
-.involve__box .col-12 a {
+.websites p a {
   color: black;
-  text-decoration: none;  
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.websites p a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.prep {
+  margin: 1rem 0;
+  padding-top: 1rem;
 }
 
 .portfolio__dev {
@@ -411,8 +422,5 @@ body {
   }
   .portfolio__title, .about__text-title {
     text-align: center;
-  }
-  .portfolio__involve p {
-    margin: 0;
   }
 }
